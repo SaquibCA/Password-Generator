@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1>Password Generator</h1>
+        <section>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Generate a Password</h3>
+                </div>
+            </div>
+            <hr>
+            <!-- Password Character Selection -->
+            <textarea id="passwordBox" rows="4" placeholder="Your Secure Password"></textarea>
+            <div class="row text-center">
+                <h5>Check if you want your password to have:-</h5>
+                <div class="col-sm-3 specialChars">
+                    <input type="checkbox" name="specialChars"checked> Special Characters !@"#$%
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" name="numbers"checked> Numbers 0-9
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" name="lwrChars"checked> Lowercase alphabets a-z
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" name="upprChars"checked> Uppercase alphabets A-Z
+                </div>
+                
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="passGenButn" onclick="createPassword()">Generate Password</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="clipboardButn" onclick="copyToClipboard()">Copy to Clipboard</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/passwdGen.js"></script>
+</body>
+</html>
