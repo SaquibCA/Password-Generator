@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Password Generator</title>
 </head>
 <body>
@@ -16,21 +22,34 @@
             </div>
             <hr>
             <!-- Password Character Selection -->
-            <textarea id="passwordBox" rows="4" placeholder="Your Secure Password"></textarea>
+            <textarea id="passWordBox" rows="4" placeholder="Your Secure Password"></textarea>
             <div class="row text-center">
-                <h5>Check if you want your password to have:-</h5>
-                <div class="col-sm-3 specialChars">
-                    <input type="checkbox" name="specialChars"checked> Special Characters !@"#$%
-                </div>
-                <div class="col-sm-3">
-                    <input type="checkbox" name="numbers"checked> Numbers 0-9
-                </div>
-                <div class="col-sm-3">
-                    <input type="checkbox" name="lwrChars"checked> Lowercase alphabets a-z
-                </div>
-                <div class="col-sm-3">
-                    <input type="checkbox" name="upprChars"checked> Uppercase alphabets A-Z
-                </div>
+            
+                <div class="container">
+                    <h5>Check if you want your password to have the following special features:-</h5>
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="col-sm-3 specialChars">
+                            <input type="checkbox" name="specialChars"checked> Special Characters !@"#$%
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="col-sm-3">
+                            <input type="checkbox" name="numbers"checked> Numbers 0-9
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="col-sm-3">
+                            <input type="checkbox" name="lwrChars"checked> Lowercase alphabets a-z
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="col-sm-3">
+                            <input type="checkbox" name="upprChars"checked> Uppercase alphabets A-Z
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 
             </div>
             <hr>
@@ -44,6 +63,10 @@
             </div>
         </section>
     </div>
-    <script src="assets/js/passwdGen.js"></script>
+    <footer>
+        <div class="container2">
+          Copyright &copy; 2020 SAQUIB AHMED
+      </footer>
+    <script src="PassWordGenerator.js"></script>
 </body>
 </html>
